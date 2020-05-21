@@ -20,7 +20,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Vynchronize</title>
+    <title>Pálmi Cinema</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#Home"><img src="img/logo.png" alt="Vynchronize logo" height="40" width="40"> Vynchronize</a>
+            <a class="navbar-brand js-scroll-trigger" href="#Home"><img src="img/logo.png" alt="Vynchronize logo" height="40" width="40"> Pálmi Cinema</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,7 +63,7 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li> -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a id="chat-nav" class="nav-link js-scroll-trigger hide" href="#messageArea">Chatroom</a>
                     </li>
                     <li class="nav-item">
@@ -81,7 +81,7 @@
                         <a target="_blank" rel="noopener noreferrer" class="nav-link js-scroll-trigger" href="https://github.com/kyle8998/Vynchronize">
                             <i class="fab fa-github"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -98,25 +98,25 @@
         <div id="userFormArea" class="row">
             <div class="col-md-12">
                 <!-- ADD DESCRIPTION HERE -->
-                <h2>Welcome to Vynchronize</h2>
-                <p class="lead">The hot new video synchronization platform used to watch videos in realtime with friends!</p>
+                <h2>Üdv Pálmi mozijában :3</h2>
+                <!--<p class="lead">The hot new video synchronization platform used to watch videos in realtime with friends!</p>-->
                 <hr style="height:20pt; visibility:hidden;" />
 
-                <h2> Join a Room! </h2>
+                <h2> Csatlakozz egy szobába! </h2>
                 <form id="userForm">
                     <div class="form-group">
                         <p style="color:red; margin-bottom: 0px" id="missinginfo"></p>
-                        <label>Enter Name</label>
+                        <label>A neved</label>
                         <input class="form-control" id="username" />
                         <br />
                         <p style="color:red; margin-bottom: 0px" id="missinginfo2"></p>
-                        <label>Enter Room ID (Default 1)</label>
-                        <button type="button" onClick="randomroom()" class="btn btn-primary random">Random</button>
+                        <label>Szoba azonosítója</label>
+                        <button type="button" onClick="randomroom()" class="btn btn-primary random">Generálás</button>
                         <br/>
                         <input class="form-control" id="roomnum" />
                         <br/>
 
-                        <input style="margin-top: 10px;" type="submit" class="btn btn-primary" value="Enter" />
+                        <input style="margin-top: 10px;" type="submit" class="btn btn-primary" value="Mehet" />
                         <hr style="height:65pt; visibility:hidden;" />
                     </div>
                 </form>
@@ -128,19 +128,19 @@
             <div class="row my-4" style="margin-top: 0px !important;">
                 <div class="col-lg-7">
 
-                    <div class="nonmobile-hide"><b>Note: </b>Only the host can control the video using the native video player controls </div>
-                    <div class="mobile-hide"><b>Mobile User</b>, please play the video once manually to give the browser permission to control the video player. </div>
+                    <!--<div class="nonmobile-hide"><b>Note: </b>Only the host can control the video using the native video player controls </div>
+                    <div class="mobile-hide"><b>Mobile User</b>, please play the video once manually to give the browser permission to control the video player. </div>-->
                     <!-- <hr style="height:0pt; visibility:hidden;" /> -->
 
                     <div style="margin: 10px" class="dropdown">
                         <button style="background-color: #007bff" class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-video"></i> Player
+                            <i class="fas fa-video"></i> Lejátszó típusa
                         </button>
                         <div class="form-control dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" onclick="changePlayer(roomnum, 0)"><i class="fab fa-youtube"></i> YouTube</a>
-                            <a class="dropdown-item" onclick="changePlayer(roomnum, 1)"><img width="14px" height="14px" src="img/dailymotion-logo.svg" alt="Daily Motion Logo"> Daily Motion</a>
-                            <a class="dropdown-item" onclick="changePlayer(roomnum, 2)"><i class="fab fa-vimeo"></i> Vimeo</a>
-                            <a class="dropdown-item" onclick="changePlayer(roomnum, 3)"><i class="fas fa-file-video"></i> HTML5 Player (.mp4/.webm) (Beta)</a>
+                            <!--<a class="dropdown-item" onclick="changePlayer(roomnum, 1)"><img width="14px" height="14px" src="img/dailymotion-logo.svg" alt="Daily Motion Logo"> Daily Motion</a>
+                            <a class="dropdown-item" onclick="changePlayer(roomnum, 2)"><i class="fab fa-vimeo"></i> Vimeo</a> -->
+                            <a class="dropdown-item" onclick="changePlayer(roomnum, 3)"><i class="fas fa-file-video"></i> Film/Sorozat néző</a>
                         </div>
                     </div>
 
@@ -150,7 +150,7 @@
 
                     <!-- INVITE MOVED TO MODAL -->
                     <!-- <p id="invite">Invite a friend! Send them the link: vynchronize.herokuapp.com/ROOMNUM</p> -->
-                    <h2><span id="hostlabel" class="label label-default"><i class="fas fa-user"></i> Current Host: Kyle </span></h2>
+                    <h2><span id="hostlabel" class="label label-default"><i class="fas fa-user"></i> Jelenlegi szobatulajdonos: XY </span></h2>
 
                     <!----------------------------------- PLAYER AREA ----------------------------------->
 
@@ -177,13 +177,13 @@
                     <!----------------------------------- PLAYER AREA ----------------------------------->
                     <!-- <hr> -->
                     <div>
-                        <button id="playButton" onclick="playVideo(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause</button>
+                        <button id="playButton" onclick="playVideo(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="fa fa-play"></i> Lejátszás / <i class="fa fa-pause"></i> Megállítás</button>
 
-                        <button id="syncbutton" onclick="syncVideo(roomnum);syncAlert()" style="margin-top:.5rem" class="btn btn-primary"><i class="fa fa-sync"></i> Sync</button>
+                        <button id="syncbutton" onclick="syncVideo(roomnum);syncAlert()" style="margin-top:.5rem" class="btn btn-primary"><i class="fa fa-sync"></i> Szinkronálás</button>
 
-                        <button id="loveButton" onclick="loveLive(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="far fa-heart"></i> Random K-pop</button>
+                        <!--<button id="loveButton" onclick="loveLive(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="far fa-heart"></i> Random K-pop</button>-->
                         <!-- <br/> -->
-                        <button id="hostbutton" onclick="changeHost(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="fas fa-users"></i> Make me the host!</button>
+                        <button id="hostbutton" onclick="changeHost(roomnum)" style="margin-top:.5rem" class="btn btn-primary"><i class="fas fa-users"></i> Legyek én a tulajdonos!</button>
                         <!-- Turn off the lights -->
                         <button id="lightButton" style="margin-top:.5rem" class="btn btn-primary switch"><i style="pointer-events:none;" class="fas fa-lightbulb"></i></button>
                     </div>
@@ -193,17 +193,44 @@
 
                     <div class="topbotmargins">
                         <input type="Video" style="max-width: 200px; margin-right: .5rem; margin-bottom: .5rem; float: left;" class="form-control" id="inputVideoId" placeholder="Video ID / URL">
-                        <button id="enqueueButton" onclick="enqueueVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-plus"></i> Add to Queue</button>
-                        <button id="emptyButton" onclick="emptyQueue(roomnum)" class="btn btn-primary"><i class="fas fa-trash"></i> Empty Queue</button>
+                        <!--<button id="enqueueButton" onclick="enqueueVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-plus"></i> Add to Queue</button>
+                        <button id="emptyButton" onclick="emptyQueue(roomnum)" class="btn btn-primary"><i class="fas fa-trash"></i> Empty Queue</button>-->
                     </div>
                     <div>
                         <!-- <a class="ghost-button-full-color"><i class="far fa-times-circle"></i></a> -->
-                        <button id="changeButton" onclick="changeVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-exchange-alt"></i> Change Video</button>
-                        <button id="previousButton" onclick="prevVideo(roomnum)" class="btn btn-primary"><i class="fas fa-step-backward"></i> Previous</button>
-                        <button id="nextButton" onclick="playNext(roomnum)" class="btn btn-primary"><i class="fas fa-step-forward"></i> Next</button>
+                        <button id="changeButton" onclick="changeVideoParse(roomnum)" class="btn btn-primary"><i class="fas fa-exchange-alt"></i> Videó átváltása</button>
+                        <!--<button id="previousButton" onclick="prevVideo(roomnum)" class="btn btn-primary"><i class="fas fa-step-backward"></i> Previous</button>
+                        <button id="nextButton" onclick="playNext(roomnum)" class="btn btn-primary"><i class="fas fa-step-forward"></i> Next</button>-->
 
-                        <br/>
+                    </div>
+                    <div>
+                        <div id="ex1" style="z-index: 100000 !important;" class="modal">
+                            <div class="sidenav">
+                                <!--<a onclick="loadMovie('xy')" href="#">Teszt film</a>-->
+                                <button class="dropdown-btn">American Horror Story 5. évad
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-container">
+                                    <a href="#" onclick="loadMovie('sln-ahs.501.mkv')">1. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.502.mkv')">2. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.503.mkv')">3. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.504.mkv')">4. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.505.mkv')">5. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.506.mkv')">6. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.507.mkv')">7. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.508.mkv')">8. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.509.mkv')">9. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.510.mkv')">10. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.511.mkv')">11. rész</a>
+                                    <a href="#" onclick="loadMovie('sln-ahs.512.mkv')">12. rész</a>
+                                </div>
+                            </div>
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                        </div>
 
+                        <p>
+                        <!-- Link to open the modal -->
+                        <a href="#ex1" rel="modal:open"><button id="chooseModal" style="margin-top:.5rem; display:none;" class="btn btn-primary"><i class="fas fa-step-forward"></i> Film/Sorozat megnyitása</button></a>
                     </div>
                     <!-- <input type="file" id="html5-input" /> -->
                     <!-- Playlist shit -->
@@ -220,14 +247,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="queue-arrows" class="arrows">
+                    <!--<div id="queue-arrows" class="arrows">
                         <div class="arrow-left">
                             <i class="fa fa-chevron-left fa-lg"></i>
                         </div>
                         <div class="arrow-right">
                             <i class="fa fa-chevron-right fa-lg"></i>
                         </div>
-                    </div>
+                    </div>-->
                     <br/>
 
                     <!-- HTML5 player input -->
@@ -245,7 +272,7 @@
                 <div class="col-lg-5">
                     <!-- <div class="col-md-4"> -->
                     <!-- <div id="onlineArea" class="row"> -->
-                    <h5 class="right-header">Online Users</h5>
+                    <h5 class="right-header">Akik itt vannak</h5>
                     <hr style="height:0pt; visibility:hidden;" />
 
                     <!-- <br/> -->
@@ -255,10 +282,10 @@
                         </div>
 
                         <!-- Trigger the modal with a button -->
-                        <button style="background-color: #007bff" type="button" class="nonmobile-hide btn btn-info btn-sm invite-button" data-toggle="modal" data-target="#inviteModal"><i style="width: 30px; height: 30px;" class="fas fa-user-plus"></i><br><h5>Invite</h5></button>
+                        <button style="background-color: #007bff" type="button" class="nonmobile-hide btn btn-info btn-sm invite-button" data-toggle="modal" data-target="#inviteModal"><i style="width: 30px; height: 30px;" class="fas fa-user-plus"></i><br><h5>Meghívás</h5></button>
                     </div>
                     <hr style="height:0pt; visibility:hidden;" />
-                    <h5 style="color:gray;">Chatroom</h5>
+                    <h5 style="color:gray;">Chat</h5>
 
                     <!-- Modal -->
                     <div id="inviteModal" class="modal fade" role="dialog">
@@ -273,7 +300,7 @@
                                 <div class="modal-body">
                                     <p>Send a friend your unique room link so they can watch videos too!</p>
                                     <!-- <p style="text-align: center;" id="invite">vynchronize.herokuapp.com/ROOMNUM</p> -->
-                                    <input class="inv_input" id="inv_input" type="text" value="vynchronize.herokuapp.com/ROOMNUM" class="field left" readonly>
+                                    <input class="inv_input" id="inv_input" type="text" value="http://palmcica.eu/ROOMNUM" class="field left" readonly>
                                 </div>
                                 <div class="modal-footer">
                                     <div style="opacity: 1" class="tooltip">
@@ -298,7 +325,7 @@
                                 <div class="form-group">
                                     <br/>
                                     <!-- <label>Enter Message...</label> -->
-                                    <input class="form-control chat-form" id="message" placeholder="Enter Message..." />
+                                    <input class="form-control chat-form" id="message" placeholder="Írj valamit..." />
                                     <!-- <textarea class="form-control" id="message"></textarea> -->
                                     <br />
                                     <!-- <input type="submit" class="btn btn-primary" value="Send Message" /> -->
@@ -314,11 +341,11 @@
             <!-- /.row -->
 
             <!-- Call to Action Well -->
-            <div class="card text-white bg-secondary my-4 text-center">
+           <!-- <div class="card text-white bg-secondary my-4 text-center">
                 <div class="card-body">
                     <p class="text-white m-0">*The synchronization may not be perfect! It's a work in progress, submit an issue on github if you wish to submit a bug report/suggestion.</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Content Row -->
             <!-- <div class="row">
@@ -363,7 +390,7 @@
             <!-- /.row -->
 
             <!-- <hr style="height:20pt; visibility:hidden;" /> -->
-            <section id="about" class="bg-light">
+            <!--<section id="about" class="bg-light">
                 <hr style="height:100pt; visibility:hidden;" />
 
                 <div class="container">
@@ -399,7 +426,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <hr style="height:50pt; visibility:hidden;" />
 
         </div>
@@ -409,7 +436,7 @@
     <!-- Footer -->
     <footer id="footer" class="py-5 bg-dark footer">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Vynchronize 2018</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Pálmi Cinema</p>
         </div>
         <!-- /.container -->
     </footer>
@@ -499,19 +526,19 @@
                 if ($username.val() == "") {
                     console.log("ENTER A NAME")
                     var noname = document.getElementById('missinginfo')
-                    noname.innerHTML = "Surely you have a name right? Enter it below!"
+                    noname.innerHTML = "Nincs neved? :D"
                 }
                 // If name is too long
                 else if ($username.val().length > 30) {
                     console.log("NAME IS TOO LONG")
                     var noname = document.getElementById('missinginfo')
-                    noname.innerHTML = "Your name can't possibly be over 30 characters!"
+                    noname.innerHTML = "Túl hosszú."
                 }
                 // If roomnate
                 else if ($roomnum.val().length > 50) {
                     console.log("ROOM NAME IS TOO LONG")
                     var noname = document.getElementById('missinginfo')
-                    noname.innerHTML = "How are you going to remember a room code that has more than 50 characters?"
+                    noname.innerHTML = "Túl hosszú."
                 }
                 // If Room contains symbols
                 // Can only be reached if the user decided to be sneaky and paste them!
@@ -520,7 +547,7 @@
                     var noname = document.getElementById('missinginfo')
                     noname.innerHTML = ""
                     var noname2 = document.getElementById('missinginfo2')
-                    noname2.innerHTML = "Please enter a room ID without symbols or leading/trailing whitespace!"
+                    noname2.innerHTML = "Különleges karakterek nélkül kérlek."
                 } else {
                     username = $username.val()
                     socket.emit('new user', $username.val(), function(data) {
@@ -532,9 +559,9 @@
                             document.getElementById('footer').style.position = 'relative';
 
                             // Show header buttons!
-                            document.getElementById('chat-nav').style.display = 'block';
+                           /* document.getElementById('chat-nav').style.display = 'block';
                             document.getElementById('about-nav').style.display = 'block';
-                            document.getElementById('contact-nav').style.display = 'block';
+                            document.getElementById('contact-nav').style.display = 'block'; */
 
                             // No longer using initarea
                             // var initStuff = document.getElementById("initArea")
@@ -547,13 +574,14 @@
 
                             // Sets the invite link (roomnum)
                             // document.getElementById('invite').innerHTML = "vynchronize.herokuapp.com/" + roomnum
-                            document.getElementById("inv_input").value = "vynchronize.herokuapp.com/" + roomnum
+                            document.getElementById("inv_input").value = "http://palmcica.eu/" + roomnum
                             history.pushState('', 'Vynchronize', roomnum);
 
                         }
                     });
                     // Join room
                     socket.emit('new room', $roomnum.val(), function(data) {
+                        //console.log("szam: "+roomnum+" vs "+ $roomnum.val())
                         // This should only call back if the client is the host
                         if (data) {
                             console.log("Host is syncing the new socket!")
@@ -610,7 +638,7 @@
 
             // Prevent special characters from being typed
             $('#username').on('keypress', function(event) {
-                var nosymbols = new RegExp("^[a-zA-Z0-9\s]+$");
+                var nosymbols = new RegExp("^[a-zA-Z0-9áéőóúűíÁÉŐÓÍŰÚ\s]+$");
                 var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
                 // Allow enters and spaces to be used still
                 if ($username.val().length > 30 || !nosymbols.test(key) && event.keyCode != 13 && event.keyCode != 32 && event.keyCode != 45 && event.keyCode != 95) {
@@ -716,6 +744,26 @@
         function randomroom() {
             document.getElementById('roomnum').value = Math.random().toString(36).substr(2, 12)
         }
+
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+        function loadMovie(url){
+            changeVideo(roomnum, "http://wgf.hu/video/"+url);
+            $(".close-modal").click()
+        }
     </script>
 
     <!-- Bootstrap core JavaScript -->
@@ -744,6 +792,11 @@
     <script src="js/vimeo.js"></script>
     <!-- HTML5 Player -->
     <script src="js/html5.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
 
 </body>
 

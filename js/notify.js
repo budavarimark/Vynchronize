@@ -119,7 +119,7 @@ function syncAlert() {
     $.notify({
         title: '<strong>Sync: </strong>',
         icon: 'fas fa-users',
-        message: " The room is now synced with you"
+        message: " A szoba sikeresen szinkronizálva"
     }, {
         type: 'success',
         delay: 400,
@@ -210,7 +210,7 @@ function betaAlert() {
     $.notify({
         title: '<strong>Warning: </strong>',
         icon: 'fas fa-trash',
-        message: "HTML5 Player is in beta. It does not work 100% with long videos"
+        message: "Még bétában van, hiba esetén írj"
     }, {
         type: 'warning',
         delay: 3200,

@@ -97,15 +97,12 @@ socket.on('createYoutube', function(data) {
 
         // The visual queue
         document.getElementById('visual-queue').style.display = 'block'
-        document.getElementById('queue-arrows').style.display = 'block'
         document.getElementById('beta-message').style.display = 'none'
-        document.getElementById('enqueueButton').style.display = 'inline-block'
-        document.getElementById('emptyButton').style.display = 'inline-block'
-        document.getElementById('nextButton').style.display = 'inline-block'
-        document.getElementById('loveButton').style.display = 'inline-block'
         // document.getElementById('html5-input').style.display = 'none'
-        document.getElementById('inputVideoId').placeholder = 'Video ID / URL'
+        document.getElementById('inputVideoId').placeholder = 'Videó ID / URL'
         // document.getElementById('html5-message').style.display = 'none'
+
+        document.getElementById('chooseModal').style.display = 'none'
 
         console.log("Player state: " + playerStatus)
         // If it is -1, there was an error and needs to resync to host
@@ -217,16 +214,12 @@ socket.on('createHTML5', function(data) {
         currPlayer = 3
 
 
-        document.getElementById('visual-queue').style.display = 'none'
-        document.getElementById('queue-arrows').style.display = 'none'
         document.getElementById('beta-message').style.display = 'block'
-        document.getElementById('enqueueButton').style.display = 'none'
-        document.getElementById('emptyButton').style.display = 'none'
-        document.getElementById('nextButton').style.display = 'none'
-        document.getElementById('loveButton').style.display = 'none'
         // document.getElementById('html5-input').style.display = 'block'
-        document.getElementById('inputVideoId').placeholder = 'Direct mp4/webm URL'
+        document.getElementById('inputVideoId').placeholder = 'Videó URL'
         // document.getElementById('html5-message').style.display = 'block'
+
+        document.getElementById('chooseModal').style.display = 'inline'
 
         betaAlert()
     }
